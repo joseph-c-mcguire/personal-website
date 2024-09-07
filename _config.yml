@@ -60,8 +60,10 @@ baseurl: "" # This should be an empty string for yourusername.github.io
 url: "https://joseph-c-mcguire.github.io/" # The base URL for your site
 github_username:  joseph-c-mcg
 
-theme: minima # Replace "minima" with your chosen theme
+theme: bulma-clean-theme
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  
+fixed_navbar: top
