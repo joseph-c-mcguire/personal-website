@@ -61,9 +61,11 @@ url: "https://joseph-c-mcguire.github.io/" # The base URL for your site
 github_username:  joseph-c-mcg
 
 theme: bulma-clean-theme
+remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
+
 
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
-  
+
 fixed_navbar: top
