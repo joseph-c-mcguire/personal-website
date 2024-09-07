@@ -18,18 +18,20 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Joseph McGuire's Blog
-email: joseph.c.mcg@gmail.com
-description: >- # this means to ignore newlines until "baseurl:"
-  Welcome to the personal blog of Joseph McGuire, where I share insights on Koopman operator theory, control systems, AI/ML applications, and more.
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://joseph-c-mcg.github.io" # the base hostname & protocol for your site
+# title: Joseph McGuire's Blog
+# email: joseph.c.mcg@gmail.com
+# description: >- # this means to ignore newlines until "baseurl:"
+# baseurl: "" # the subpath of your site, e.g. /blog
+# url: "https://joseph-c-mcg.github.io" # the base hostname & protocol for your site
 
-github_username:  joseph-c-mcg
-# Build settings
-theme: minima
-plugins:
-  - jekyll-feed
+# # Build settings
+# theme: minima
+
+# plugins:
+#   - jekyll-feed
+#   - jekyll-seo-tag
+
+# permalink: /:categories/:year/:month/:day/:title/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
@@ -50,3 +52,16 @@ plugins:
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+title: Joseph McGuire's Blog
+email: joseph.c.mcg@gmail.com
+description: >- 
+  Welcome to the personal blog of Joseph McGuire, where I share insights on Koopman operator theory, control systems, AI/ML applications, and more.
+baseurl: "" # This should be an empty string for yourusername.github.io
+url: "https://joseph-c-mcguire.github.io/" # The base URL for your site
+github_username:  joseph-c-mcg
+
+theme: minima # Replace "minima" with your chosen theme
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
