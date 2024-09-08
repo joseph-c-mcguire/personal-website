@@ -98,6 +98,5 @@ title: Home
     <li><strong>Sonoma State University</strong> - Bachelor of Arts (BA), Physics (2017 - 2020)</li>
     <li><strong>Allan Hancock College</strong> - Associate of Arts (AA), Computer Science (2013 - 2017)</li>
   </ul>
-</div>
 
 <p class="welcome-text">Stay tuned for more updates!</p>
