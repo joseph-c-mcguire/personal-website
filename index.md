@@ -39,8 +39,8 @@ title: Home
 </style>
 
 <div class="welcome-text">
-  <h1>Welcome to My Blog!</h1>
-  <img src="images/headshot.jpg" alt="Your Name" class="header-image">
+  <h1>Joseph McGuire</h1>
+  <img src="images/headshot.jpg" alt="Joseph McGuire" class="header-image">
   <p>Thank you for visiting my blog. Here, you'll find a collection of my thoughts, experiences, and insights on various topics. Whether you're here to learn something new, get inspired, or just pass the time, I hope you find something that resonates with you.</p>
 </div>
 
@@ -56,7 +56,6 @@ title: Home
 <div class="resume-section">
   <h2>Contact</h2>
   <ul>
-    <li>Phone: 805-468-5639 (Mobile)</li>
     <li>Email: <a href="mailto:joseph.c.mcg@gmail.com">joseph.c.mcg@gmail.com</a></li>
     <li>LinkedIn: <a href="https://www.linkedin.com/in/joseph-c-mcg">www.linkedin.com/in/joseph-c-mcg</a></li>
   </ul>
@@ -69,7 +68,6 @@ title: Home
     <li>Python</li>
     <li>Artificial Intelligence (AI)</li>
     <li>Multi-Agent Control Theory</li>
-
   </ul>
 
   <h2>Summary</h2>

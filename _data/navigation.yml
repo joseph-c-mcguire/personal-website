@@ -3,7 +3,10 @@
   link: /contact/
 - name: About
   link: /about/
-- name: Posts
-  dropdown: 
-    - name: Test Post
-      link: /posts/test-post 
+# - name: Posts
+#   dropdown: true
+#   items:
+#     - name: Test Post
+#       link: /posts/test-post
+#     - name: Surrogate Models -- Part 1
+#       link: /posts/surrogate-models-part-1
