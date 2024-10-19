@@ -25,6 +25,7 @@ description: >-
 baseurl: "" # This should be an empty string for yourusername.github.io
 url: "https://joseph-c-mcguire.github.io/" # The base URL for your site
 github_username: joseph-c-mcg
+google_analytics: G-2YVYYEMXMQ
 
 # Exclude these files and directories from the site build
 exclude:
