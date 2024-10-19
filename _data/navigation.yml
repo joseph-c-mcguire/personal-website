@@ -1,12 +1,10 @@
-
+- name: Resume
+  link: /resume/
 - name: Contact
   link: /contact/
-- name: About
-  link: /about/
-# - name: Posts
-#   dropdown: true
-#   items:
-#     - name: Test Post
-#       link: /posts/test-post
-#     - name: Surrogate Models -- Part 1
-#       link: /posts/surrogate-models-part-1
+- name: Blog Posts
+  link: /posts/
+- name: Technical Writing
+  link: /technical-writing/
+- name: GitHub Projects
+  link: /github-projects/

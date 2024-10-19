@@ -18,10 +18,10 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Joseph McGuire's Blog
+title: Blog -- Joseph McGuire
 email: joseph.c.mcg@gmail.com
 description: >- 
-  Welcome to the personal blog of Joseph McGuire, where I share insights on Koopman operator theory, control systems, AI/ML applications, and more.
+  Welcome to the personal blog of Joseph McGuire, where I share work I've done, work I'm thinking about, and my general thoughts and writings. Enjoy!
 baseurl: "" # This should be an empty string for yourusername.github.io
 url: "https://joseph-c-mcguire.github.io/" # The base URL for your site
 github_username: joseph-c-mcg
