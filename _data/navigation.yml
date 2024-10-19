@@ -1,5 +1,5 @@
-- name: Resume
-  link: /resume/
+- name: About
+  link: /about/
 - name: Contact
   link: /contact/
 - name: Blog Posts

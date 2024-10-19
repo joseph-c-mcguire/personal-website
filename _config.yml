@@ -18,7 +18,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Blog -- Joseph McGuire
+title: Joseph McGuire
 email: joseph.c.mcg@gmail.com
 description: >- 
   Welcome to the personal blog of Joseph McGuire, where I share work I've done, work I'm thinking about, and my general thoughts and writings. Enjoy!
