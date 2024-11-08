@@ -19,7 +19,7 @@ where:
 - $y$ represents the dependent variable,
 - $x$ represents the independent variable,
 - $\beta_0$ is the y-intercept (the value of $y$ when $x = 0$),
-- $\beta_1 is the slope (the change in $y$ per unit change in $x$),
+- $\beta_1$ is the slope (the change in $y$ per unit change in $x$),
 - $\epsilon$ is the error term (the difference between the observed and predicted values).
 
 ### Multiple Linear Regression
