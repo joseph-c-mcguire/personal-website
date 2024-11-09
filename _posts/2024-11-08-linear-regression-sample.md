@@ -5,6 +5,10 @@ date: 2024-11-08
 header_image: /assets/images/bishop-peak.png
 ---
 
+<!-- Load MathJax -->
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
 ## Introduction
 Linear regression models the relationship between a dependent variable and one or more independent variables. This technique plays a critical role in many fields, including finance, biology, engineering, and social sciences. You can use linear regression to predict outcomes and uncover relationships. For instance, you might apply linear regression to forecast sales based on advertising expenditures.
 
@@ -12,37 +16,33 @@ Linear regression models the relationship between a dependent variable and one o
 The purpose of linear regression is to find the line that best fits the data. This line minimizes the sum of the squared differences between the observed values and the predicted values.
 
 ### Simple Linear Regression
-In simple linear regression, you model the relationship between a dependent variable $y$ and a single independent variable $x$. You express the model as:
+In simple linear regression, you model the relationship between a dependent variable \( y \) and a single independent variable \( x \). You express the model as:
 
-$$ y = \beta_0 + \beta_1 x + \epsilon $$
+\[ y = \beta_0 + \beta_1 x + \epsilon \]
 
 where:
-- $y$ represents the dependent variable,
-- $x$ represents the independent variable,
-- $\beta_0$ is the y-intercept (the value of $y$ when $x = 0$),
-- $\beta_1$ is the slope (the change in $y$ per unit change in $x$),
-- $\epsilon$ is the error term (the difference between the observed and predicted values).
+- \( y \) represents the dependent variable,
+- \( x \) represents the independent variable,
+- \( \beta_0 \) is the y-intercept (the value of \( y \) when \( x = 0 \)),
+- \( \beta_1 \) is the slope (the change in \( y \) per unit change in \( x \)),
+- \( \epsilon \) is the error term (the difference between the observed and predicted values).
 
 ### Multiple Linear Regression
-For multiple linear regression, you extend the model to include more than one independent variable $x_1, x_2, ..., x_p$. The model becomes:
+For multiple linear regression, you extend the model to include more than one independent variable \( x_1, x_2, \ldots, x_p \). The model becomes:
 
-$$
-y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_p x_p + \epsilon
-$$
+\[ y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + \ldots + \beta_p x_p + \epsilon \]
 
 ## Estimating Parameters Using Least Squares
-You estimate the parameters $\beta_0$, $\beta_1$ using the least squares method. This method minimizes the sum of squared residuals, where a residual is the difference between the observed and predicted values.
+You estimate the parameters \( \beta_0 \), \( \beta_1 \) using the least squares method. This method minimizes the sum of squared residuals, where a residual is the difference between the observed and predicted values.
 
-To estimate the parameters $\beta_0$ and $\beta_1$ in simple linear regression, we minimize the sum of squared errors:
+To estimate the parameters \( \beta_0 \) and \( \beta_1 \) in simple linear regression, we minimize the sum of squared errors:
 
-$$
-S(\beta_0, \beta_1) = \sum_{i=1}^n (y_i - (\beta_0 + \beta_1 x_i))^2
-$$
+\[ S(\beta_0, \beta_1) = \sum_{i=1}^n (y_i - (\beta_0 + \beta_1 x_i))^2 \]
 
 ### Numerical Example: Simple Linear Regression
 Let’s calculate the parameters using a small dataset. Assume we have the following data points:
 
-| $x_i$ | $y_i$ |
+| \( x_i \) | \( y_i \) |
 |-------|-------|
 | 1     | 2     |
 | 2     | 3     |
@@ -50,47 +50,35 @@ Let’s calculate the parameters using a small dataset. Assume we have the follo
 | 4     | 7     |
 | 5     | 8     |
 
-We will estimate the parameters $\beta_0$ and $\beta_1$ using the least squares method.
+We will estimate the parameters \( \beta_0 \) and \( \beta_1 \) using the least squares method.
 
-#### Step 1: Calculate the Slope ($\beta_1$)
-The formula for the slope $\beta_1$ in simple linear regression is:
+#### Step 1: Calculate the Slope (\( \beta_1 \))
+The formula for the slope \( \beta_1 \) in simple linear regression is:
 
-```math
-\beta_1 = \frac{n \sum{x_i y_i} - \sum{x_i} \sum{y_i}}{n \sum{x_i^2} - (\sum{x_i})^2}
-```
+\[ \beta_1 = \frac{n \sum{x_i y_i} - \sum{x_i} \sum{y_i}}{n \sum{x_i^2} - (\sum{x_i})^2} \]
 
 For our data:
 
-```math
-\sum{x_i} = 1 + 2 + 3 + 4 + 5 = 15, \quad \sum{y_i} = 2 + 3 + 5 + 7 + 8 = 25,
-\sum{x_i y_i} = 1 \times 2 + 2 \times 3 + 3 \times 5 + 4 \times 7 + 5 \times 8 = 91,
-\sum{x_i^2} = 1^2 + 2^2 + 3^2 + 4^2 + 5^2 = 55.
-```
+\[ \sum{x_i} = 1 + 2 + 3 + 4 + 5 = 15, \quad \sum{y_i} = 2 + 3 + 5 + 7 + 8 = 25, \]
+\[ \sum{x_i y_i} = 1 \times 2 + 2 \times 3 + 3 \times 5 + 4 \times 7 + 5 \times 8 = 91, \]
+\[ \sum{x_i^2} = 1^2 + 2^2 + 3^2 + 4^2 + 5^2 = 55. \]
 
-Substituting into the formula for `\beta_1`:
+Substituting into the formula for \( \beta_1 \):
 
-```math
-\beta_1 = \frac{5 \times 91 - 15 \times 25}{5 \times 55 - 15^2} = \frac{80}{50} = 1.6
-```
+\[ \beta_1 = \frac{5 \times 91 - 15 \times 25}{5 \times 55 - 15^2} = \frac{80}{50} = 1.6 \]
 
-#### Step 2: Calculate the Intercept (`\beta_0`)
-The formula for the intercept `\beta_0` is:
+#### Step 2: Calculate the Intercept (\( \beta_0 \))
+The formula for the intercept \( \beta_0 \) is:
 
-```math
-\beta_0 = \frac{\sum{y_i} - \beta_1 \sum{x_i}}{n}
-```
+\[ \beta_0 = \frac{\sum{y_i} - \beta_1 \sum{x_i}}{n} \]
 
 Substituting the known values:
 
-```math
-\beta_0 = \frac{25 - 1.6 \times 15}{5} = 0.2
-```
+\[ \beta_0 = \frac{25 - 1.6 \times 15}{5} = 0.2 \]
 
 Thus, the estimated regression equation is:
 
-```math
-y = 0.2 + 1.6x
-```
+\[ y = 0.2 + 1.6x \]
 
 ## Code Example: Fitting a Linear Regression Model with Python
 To apply linear regression in practice, we can use Python and the scikit-learn library. Below is an example of how to fit a linear regression model to the data we used in the previous example.
@@ -166,20 +154,14 @@ While linear regression is useful, it has some limitations, particularly in case
 ### Ridge Regression
 Ridge regression is an extension of linear regression that includes a regularization term to prevent overfitting. It adds a penalty to the size of the coefficients, which discourages large values. The ridge regression objective function is:
 
-```math
-\hat{\beta}_{ridge} = \underset{\beta_0, \beta_1, \ldots, \beta_p}{\text{argmin}} \left( \sum_{i=1}^n (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^p \beta_j^2 \right)
-```
+\[ \hat{\beta}_{ridge} = \underset{\beta_0, \beta_1, \ldots, \beta_p}{\text{argmin}} \left( \sum_{i=1}^n (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^p \beta_j^2 \right) \]
 
-where `λ` is the regularization parameter. Ridge regression is particularly useful when there is multicollinearity in the data.
+where \( \lambda \) is the regularization parameter. Ridge regression is particularly useful when there is multicollinearity in the data.
 
 ### Lasso Regression
 Lasso regression (Least Absolute Shrinkage and Selection Operator) also adds a penalty to the coefficients, but it uses the L1 norm (absolute value) instead of the L2 norm used in ridge regression. This leads to some coefficients being exactly zero, effectively performing feature selection. The objective function for lasso regression is:
 
-```math
-\hat{\beta}_{lasso} = \underset
-
-{\beta_0, \beta_1, \ldots, \beta_p}{\text{argmin}} \left( \sum_{i=1}^n (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^p |\beta_j| \right)
-```
+\[ \hat{\beta}_{lasso} = \underset{\beta_0, \beta_1, \ldots, \beta_p}{\text{argmin}} \left( \sum_{i=1}^n (y_i - \hat{y}_i)^2 + \lambda \sum_{j=1}^p |\beta_j| \right) \]
 
 Lasso regression is particularly useful when you have many predictors and need to perform automatic feature selection.
 
