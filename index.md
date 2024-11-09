@@ -137,7 +137,6 @@ title: Home
 </style>
 
 <div class="section">
-  <h2>Takeaways</h2>
   <div class="card-container">
     <div class="card">
       <i class="fas fa-brain"></i>
