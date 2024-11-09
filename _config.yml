@@ -46,6 +46,8 @@ remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
 plugins:
   - jekyll-feed
   - jekyll-seo-tag
+  - jekyll-katex
+
 
 markdown: kramdown
 kramdown:
