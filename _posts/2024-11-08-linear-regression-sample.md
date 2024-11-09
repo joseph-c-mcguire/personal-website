@@ -11,9 +11,7 @@ The purpose of linear regression is to find the line that best fits the data. Th
 ### Simple Linear Regression
 In simple linear regression, you model the relationship between a dependent variable $y$ and a single independent variable $x$. You express the model as:
 
-```math
-y = \beta_0 + \beta_1 x + \epsilon
-```
+$$ y = \beta_0 + \beta_1 x + \epsilon $$
 
 where:
 - $y$ represents the dependent variable,
@@ -25,18 +23,18 @@ where:
 ### Multiple Linear Regression
 For multiple linear regression, you extend the model to include more than one independent variable $x_1, x_2, ..., x_p$. The model becomes:
 
-```math
+$$
 y = \beta_0 + \beta_1 x_1 + \beta_2 x_2 + ... + \beta_p x_p + \epsilon
-```
+$$
 
 ## Estimating Parameters Using Least Squares
 You estimate the parameters $\beta_0$, $\beta_1$ using the least squares method. This method minimizes the sum of squared residuals, where a residual is the difference between the observed and predicted values.
 
 To estimate the parameters $\beta_0$ and $\beta_1$ in simple linear regression, we minimize the sum of squared errors:
 
-```math
+$$
 S(\beta_0, \beta_1) = \sum_{i=1}^n (y_i - (\beta_0 + \beta_1 x_i))^2
-```
+$$
 
 ### Numerical Example: Simple Linear Regression
 Let’s calculate the parameters using a small dataset. Assume we have the following data points:
@@ -188,5 +186,5 @@ Linear regression is a powerful and versatile tool for modeling relationships be
 By understanding the foundations of linear regression, practitioners can effectively apply it to a wide variety of real-world problems, from forecasting to scientific analysis.
 
 ## References
-1. James, G., Witten, D., Hastie, T., & Tibshirani, R. (2013). *An Introduction to Statistical Learning*. Springer.
-2. Montgomery, D. C., Peck, E. A., & Vining, G. G. (2012). *Introduction to Linear Regression Analysis*. Wiley.
+1. James, Gareth. "An introduction to statistical learning." (2013).
+2. Montgomery, Douglas C., Elizabeth A. Peck, and G. Geoffrey Vining. Introduction to linear regression analysis. John Wiley & Sons, 2021.
