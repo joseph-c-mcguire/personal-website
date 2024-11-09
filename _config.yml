@@ -39,6 +39,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - _site/
 
 remote_theme: chrisrhymes/bulma-clean-theme@v0.14.0
 
@@ -48,6 +49,7 @@ plugins:
 
 markdown: kramdown
 kramdown:
-   math_engine: mathjax
+  input: GFM
+  math_engine: mathjax
 
 fixed_navbar: top

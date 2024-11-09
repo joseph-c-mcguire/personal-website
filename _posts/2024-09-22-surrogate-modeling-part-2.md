@@ -9,7 +9,7 @@ author: Joseph McGuire
 
 <style>  
 .header-background {  
-    background-image: url('../images/blog/dalle3-background.jpg');  
+    background-image: url('../assets/images/blog/dalle3-background.jpg');  
     background-size: cover;  
     background-position: center;  
     padding: 50px;  
@@ -51,7 +51,7 @@ A significant part of the overhead in building surrogate models is **Data Genera
 
 **System parameters** are variables that usually remain static throughout a run. They are inherent to a system's configuration but may vary across different instances of that system, such as difficulty settings in a game, the type of equipment used at a sequestration facility, or the underlying terrain in a climate model.
 
-![Legend of Zelda](../images/blog/zelda-diagram.png)
+![Legend of Zelda](../assets/images/blog/zelda-diagram.png)
 
 ### Differentiating Quantities
 
@@ -65,10 +65,10 @@ The combinations of states here scale combinatorially. For example, if we have 1
 
 Unfortunately, this gets even more complex when considering continuous health or space. We also need variation in **control actions** and **system parameters**. For instance, Link's health may depend on his movement direction, screen, number of enemies, or enemy locations. **Control actions** here would be Link's movement actions and what he has equipped (e.g., slingshot, bomb, sword, shield). **System parameters** might be the screen or difficulty settings. Therefore, we need the 845 states for different combinations of **control actions** (left, down, up, right, equip sword, equip shield, equip slingshot, equip bomb) and **system parameters** (~200 screens).
 
-![Not-Zelda Zelda](../images/blog/dalle3-not-zelda.webp)
+![Not-Zelda Zelda](../assets/images/blog/dalle3-not-zelda.webp)
 <span style="color:#009cdb">The result of a DALLE-3 conversation...</span>.
 
-![Conversation](../images/blog/chatgpt-exchange.png)
+![Conversation](../assets/images/blog/chatgpt-exchange.png)
 <span style="color:#009cdb">Definitely not Zelda, Zelda.</span>.
 
 ## Simplifying the Problem

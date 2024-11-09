@@ -5,11 +5,12 @@ date:   2024-09-21 12:00:00 -0000
 categories: surrogate modeling
 permalink: /posts/surrogate-models-part-1
 author: Joseph McGuire
+header_image: /assets/images/blog/dalle3-background.jpg
 ---
 
-<style>
+<!-- <style>
 .header-background {
-    background-image: url('../images/blog/dalle3-background.jpg');
+    background-image: url('../assets/images/blog/dalle3-background.jpg');
     background-size: cover;
     background-position: center;
     padding: 50px;
@@ -21,7 +22,7 @@ author: Joseph McGuire
 <div class="header-background">
     <h1>Surrogate Models: Part 1</h1>
     <p>Understanding the Basics of Surrogate Modeling</p>
-</div>
+</div> -->
 
 # Introduction
 Welcome to the first part of our series on surrogate modeling. This is a field I work in daily, and I'm excited to share it with you!
@@ -33,8 +34,8 @@ Often, these systems have user-specified parameters. This raises the question: "
 Additionally, there might be questions about contributing or significant factors that lead to a specified outcome, such as "What compound in this factory leads to the most emissions?" or "Do weather conditions in Kansas affect the conditions in Wisconsin?" These questions relate to developing a faster, lower-fidelity surrogate model that enables queries that can't be done on the original system due to its complexity.
 
 <div style="text-align: center;">
-    <img src="../images/blog/dalle3-surrogate-models-2.webp" alt="Dalle-3's Interpretation of surrogate models" width="200"/>
-    <img src="../images/blog/dalle3-surrogate-models.webp" alt="Dalle-3's Interpretation of surrogate models" width="200"/>
+    <img src="../assets/images/blog/dalle3-surrogate-models-2.webp" alt="Dalle-3's Interpretation of surrogate models" width="200"/>
+    <img src="../assets/images/blog/dalle3-surrogate-models.webp" alt="Dalle-3's Interpretation of surrogate models" width="200"/>
     <br>
     <caption> DALLE-3's interpretation of surrogate models</caption>
 </div>
@@ -42,7 +43,7 @@ Additionally, there might be questions about contributing or significant factors
 # Overview of Surrogate Models
 In the remainder of this series, I'll describe the important components of surrogate modeling at a high level: Model Training, Forecasts, and Scenario Evaluation.
 
-![Surrogate Model](../images/blog/blog-surrogate.png)
+![Surrogate Model](../assets/images/blog/blog-surrogate.png)
 
 # References
 1. Wiesberg, I. L., de Medeiros, J. L., de Mello, R. V. P., Maia, J. G. S., Bastos, J. B. V., & Ofélia de Queiroz, F. A. (2021). Bioenergy production from sugarcane bagasse with carbon capture and storage: Surrogate models for techno-economic decisions. Renewable and Sustainable Energy Reviews, 150, 111486.

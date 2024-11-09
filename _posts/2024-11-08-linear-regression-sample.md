@@ -1,6 +1,9 @@
-# Technical Writing Sample: Linear Regression
-**Author**: Joseph McGuire  
-**Date**: 2024-11-08
+---
+title: "Technical Writing Sample: Linear Regression"
+author: Joseph McGuire
+date: 2024-11-08
+header_image: /assets/images/bishop-peak.png
+---
 
 ## Introduction
 Linear regression models the relationship between a dependent variable and one or more independent variables. This technique plays a critical role in many fields, including finance, biology, engineering, and social sciences. You can use linear regression to predict outcomes and uncover relationships. For instance, you might apply linear regression to forecast sales based on advertising expenditures.
