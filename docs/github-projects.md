@@ -2,7 +2,7 @@
 layout: page
 title: GitHub Projects
 permalink: /github-projects/
-description: Examples of my GitHub Projects.
+description: Blurbs about some of my GitHub projects.
 ---
 
 <style>
@@ -166,6 +166,57 @@ cd Math-of-data-science</code></pre>
         </li>
         <li>Open the materials using Jupyter Notebook or JupyterLab:
           <pre><code>jupyter notebook</code></pre>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h2><a href="https://github.com/joseph-c-mcguire/webapp-example-frontend">Predictive Maintenance System</a></h2>
+    <div class="project-description">
+      <h3>Description</h3>
+      <p>The Predictive Maintenance System is a web application designed to perform Exploratory Data Analysis (EDA) and model diagnostics on a predictive maintenance dataset. The frontend is built using React and communicates with a backend server to fetch and display data. The application allows users to interact with the model, query it with new inputs, and view performance metrics.</p>
+    </div>
+    <div class="project-usage">
+      <h3>How to Use</h3>
+      <ol>
+        <li>Visit the deployed application: <a href="https://webapp-example-frontend-56f2ec31cf0a.herokuapp.com/">Predictive Maintenance System</a></li>
+        <li>Clone the repository:
+          <pre><code>git clone https://github.com/joseph-c-mcguire/webapp-example-frontend.git
+cd webapp-example-frontend</code></pre>
+        </li>
+        <li>Install dependencies:
+          <pre><code>npm install</code></pre>
+        </li>
+        <li>Run the application locally:
+          <pre><code>npm start</code></pre>
+        </li>
+      </ol>
+    </div>
+  </div>
+
+  <div class="project-card">
+    <h2><a href="https://github.com/joseph-c-mcguire/webapp-example-backend">Predictive Maintenance System Backend</a></h2>
+    <div class="project-description">
+      <h3>Description</h3>
+      <p>This project is a backend system for a predictive maintenance application. The system is designed for training, serving, and producing diagnostics for a set of models trained on a UCI dataset. This was a learning exercise to build a full-stack web application. The frontend repo can be found <a href="https://github.com/joseph-c-mcguire/webapp-example-frontend">here</a>.</p>
+      <p>The dataset is a predictive maintenance dataset hosted by the University of California, Irvine, and can also be found on Kaggle.com. Three sample models (Decision Tree, Gradient Boosting, and Random Forest) were trained to handle the multi-class classification problem. These models were selected for their consistent class structure in Scikit-Learn, making it easier to retrieve attributes like <code>feature_importances_</code> and methods like <code>predict_proba</code> across different models.</p>
+    </div>
+    <div class="project-usage">
+      <h3>How to Use</h3>
+      <ol>
+        <li>Clone the repository:
+          <pre><code>git clone https://github.com/joseph-c-mcguire/webapp-example-backend.git
+cd webapp-example-backend</code></pre>
+        </li>
+        <li>Install dependencies:
+          <pre><code>pip install -r requirements.txt</code></pre>
+        </li>
+        <li>Run the server locally:
+          <pre><code>python run.py</code></pre>
+        </li>
+        <li>For production, use:
+          <pre><code>python app.py</code></pre>
         </li>
       </ol>
     </div>
