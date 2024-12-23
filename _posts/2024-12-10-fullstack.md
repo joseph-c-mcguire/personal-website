@@ -237,6 +237,13 @@ Deploying the full-stack application involves setting up both the frontend and b
 3. **Deploying**:
    - Push your code to GitHub. The GitHub Actions workflow will automatically deploy your application to Heroku.
 
+## Future Steps
+While the current setup demonstrates a functional full-stack application, there are several enhancements planned:
+1. **Backend Authentication**: Implement an authentication layer for securing endpoints and controlling access to model operations.
+2. **User Management**: Provide user registration, login, and role-based permissions, allowing for multi-user collaboration and secure data handling.
+3. **Model Retraining**: Introduce the ability to retrain models from within the application, enabling on-demand updates and continuous improvements.
+4. **Frontend Expansion**: Expand the frontend’s features and design, improving usability and incorporating new visualization tools for deeper insights into model performance and data analysis.
+
 # Conclusion
 
 Building a full-stack web application was a valuable learning experience. It provided insights into the challenges of integrating different technologies and the importance of testing and deployment practices. The Predictive Maintenance System serves as a practical example of how to build and deploy a machine learning application, from data processing to model serving and user interaction.
